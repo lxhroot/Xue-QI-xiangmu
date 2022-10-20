@@ -1,0 +1,23 @@
+/* 清除浮动 */
+.clearfix::after {
+    content: '';
+    display: inline-block;
+    height: 0;
+    clear: both;
+}
+
+/* 左浮动 */
+.fl {
+    float: left;
+}
+
+/* 右浮动 */
+.fr {
+    float: right;
+}
+
+/* 版心 */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
