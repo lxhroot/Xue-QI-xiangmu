@@ -209,6 +209,7 @@
 	position: absolute;
 	left: 200px;
 	top: 0;
+	background-color: white;
 	border: 2px solid #ff6700;
 	width: 500px;
 	height: 426px;
@@ -221,18 +222,212 @@
 }
 /* 4．今日推荐 */
 .recommend{
-    height: 500px;
-    background-color: #666;
+    height: 544px;
+}
+/* 标题 */
+.recommend .title{
+	width: 1200px;
+	height: 40px;
+	margin-top: 10px;
+	text-indent: 20px;
+	font-size: 24px;
+	color: #ff6700;
+	font-weight: 300;
+	background-color: #fff;
+	line-height: 40px;
+	border-bottom: 6px solid #ff6700;
+}
+/* 推荐 */
+.recommend .recommend-content {
+	width: 1190px;
+	height: 498px;
+	margin: 0 auto;
+}
+.recommend .recommend-content ul{
+	width: 1190px;
+	height: 498px;
+	margin: 0 auto;
+	background-color: #ff6700;
+}
+/* li */
+.recommend .recommend-content ul li{
+	width: 196px;
+	height: 247px;
+	background-color: #fff;
+	float: left;
+	margin-left: 2px;
+	margin-bottom: 2px;
+}
+/* 整体居中 */
+.recommend .recommend-content ul li{
+	text-align: center;
+}
+/* p标签样式 */
+.recommend .recommend-content ul li p{
+	text-align: left;
+	text-indent: 10px;
+	font-size: 14x;
+}
+/* 抢购 */
+.recommend .recommend-content ul li p.limit-time{
+	text-align: left;
+	text-indent: 0;
+}
+/* 全国联保 */
+.recommend .recommend-content ul li p.text{
+	color: red;
+}
+/* 价格 */
+.recommend .recommend-content ul li p.price{
+	font-size: 20px;
+	color: red;
+	margin-top: 5px;
+	font-weight: 100;
 }
 /* 5．电子书 */
 .ebook{
-    height: 500px;
-    background-color: #537885;
+    height: 496px;
+	margin-top: 34px;
+}
+/* 左侧盒子 */
+.ebook .left-box{
+	width: 906px;
+	height: 496px;
+}
+.ebook .left-box .top{
+	width: 906px;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 6px solid #ff6700;
+	background-color: #fff;
+}
+.ebook .left-box .top .title{
+	text-indent: 20px;
+	font-size: 24px;
+	color: #ff6700;
+	font-weight: 300;
+	line-height: 40px;
+}
+/* 右侧标题导航 */
+.ebook .left-box .top ul li{
+	float: left;
+	font-size: 18px;	
+	width: 100px;
+	text-align: center;
+}
+/* 右侧激活类 */
+.ebook .left-box .top ul li.active {
+	background-color: #ff6700;
+	color: #fff;
+}
+/* 内容 */
+.ebook .left-box .content{
+	height: 450px;
+	width: 906px;
+	/* background-color: #ccc; */
+}
+/* 左侧广告 */
+.ebook .left-box .content .ads{
+	height: 450px;
+	width: 236px;
+	background-color: #f9f9f9;
+}
+.ebook .left-box .content .ads .top-img {
+	width: 236px;
+	height: 290px;
+
+}
+.ebook .left-box .content .ads .bottom-text {
+	height: 160px;
+	width: 236px;
+}
+.ebook .left-box .content .ads .bottom-text ul {
+	width: 235px;
+	height: 160px;
+	margin-left: 1px;
+}
+.ebook .left-box .content .ads .bottom-text ul li{
+	float: left;
+	width: 78px;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 10px;
+}
+/* 右侧图书 */
+.ebook .left-box .content .ebook-list{
+	height: 450px;
+	width: 670px;
+	background-color: #ccc;
+}
+.ebook .left-box .content .ebook-list ul li{
+	float: left;
+	height: 223px;
+	width: 165px;
+	margin-left: 2px;
+	margin-bottom: 2px;
+	background-color: #fff;
+	text-align: center;
+}
+.ebook .left-box .content .ebook-list ul li p{
+	text-align: left;
+	text-indent: 10px;
+}
+.ebook .left-box .content .ebook-list ul li img{
+	margin: 15px auto;
+}
+.ebook .left-box .content .ebook-list ul li p:first-child{
+	font-size: 18px;
+}
+/* 将来的轮播 */
+.ebook .left-box .content .ebook-list ul li:not(:first-child){
+
+}
+.ebook .left-box .content .ebook-list ul li p:not(:first-child){
+	color: red;
+}
+.ebook .left-box .content .ebook-list ul li p:last-child{
+	font-size: 14px;
+}
+/* 图书电子书-右侧BOX */
+.ebook .right-box{
+	width: 286px;
+	height: 456px;
+	margin-top: 40px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+}
+.ebook .right-box .title{
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	font-size: 24px;
+	font-weight: 200px;
+	color: #333;
+}
+.ebook .right-box ul li{
+	line-height: 42px;
+	font-size: 16px;
+	text-indent: 5px;
+}
+.ebook .right-box ul li .desc{
+	font-size: 12px;
+	line-height: 18px;
+	height: 150px;
+	color: #333;
+	overflow: ellipsis;
+	display: none;
+}
+.ebook .right-box ul li:first-child p:first-child{
+	display: none;
+}
+.ebook .right-box ul li .desc.active{
+	display: block;
 }
 /* 6．服装 */
 .clothes{
+	margin-top: 30px;
     height: 500px;
-    background-color: #aaa;
+    background-color: green;
 }
 /* 7．户外运动 */
 .sport{
